@@ -1,0 +1,9 @@
+<h1>Albums</h1>
+<% allAlbums.forEach((album, i) => { %>
+    <li>
+        <h1><%- album.name%></h1>
+        <img src="<%= album.images[0].url%>" alt="picture">
+        <!-- <a href="<%#- artist.items[i].images[0].url%>">Pic</a> -->
+        <button><a href="/tracks/<%- album.id%>">View tracks</a></button>
+    </li>
+    <% }) %>
