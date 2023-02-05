@@ -1,9 +1,16 @@
-<h1>Albums</h1>
-<% allAlbums.forEach((album, i) => { %>
-    <li>
-        <h1><%- album.name%></h1>
-        <img src="<%= album.images[0].url%>" alt="picture">
-        <!-- <a href="<%#- artist.items[i].images[0].url%>">Pic</a> -->
-        <button><a href="/tracks/<%- album.id%>">View tracks</a></button>
-    </li>
+<link rel="stylesheet" href="/styles/artist-result.css">
+
+<div class="container">
+    <% allAlbums.forEach(album => { %>
+    <div class="artist">
+        <!-- <img src="<%#= album.images[0].url%>" alt="picture" /> -->
+        <div style="background-image: url('<%= album.images[0].url%>'); height: 400px; width: 350px; background-size: cover;"></div>
+
+        <div class="texts">
+            <h1><%- album.name%></h1>
+          <!-- <a href="<%#- artist.items[i].images[0].url%>">Pic</a> -->
+          <button><a href="/tracks/<%- album.id%>">View tracks</a></button>
+        </div>
+    </div>
     <% }) %>
+</div>

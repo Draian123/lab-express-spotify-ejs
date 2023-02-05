@@ -1,0 +1,55 @@
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.artist{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    margin: 15px;
+}
+
+img{
+    height: 400px;
+    width: 300px;
+    /* background-size: cover; */
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: gray;
+    color: white;
+    width: 350px;
+    height: 150px;
+}
+h1{
+    font-size: 20px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button{
+    padding: 5px 30px;
+    text-decoration: none;
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

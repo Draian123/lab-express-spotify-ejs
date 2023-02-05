@@ -1,0 +1,35 @@
+.tracks-container{
+    font-family: sans-serif;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    background-color: rgb(139, 139, 139);
+}
+#album{
+    padding: 20px;
+}
+#listen{
+    padding: 20px;
+}
+
+.single-track{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+h4{
+    padding: 20px 10px;
+    font-size: 30px;
+    margin: 0;
+}
+
+audio{
+    padding: 0 10px;
+}

@@ -1,9 +1,15 @@
-<h1>Albums</h1>
-<% allTracks.forEach((track, i) => { %>
-    <li>
-        <h1><%- track.name%></h1>
-        <!-- <img src="<%#= track.images[0].url%>" alt="picture"> -->
-        <!-- <a href="<%#- artist.items[i].images[0].url%>">Pic</a> -->
-        <audio controls src="<%- track.preview_url%>"></audio>
-    </li>
-    <% }) %>
+<link rel="stylesheet" href="/styles/tracks.css">
+<div class="tracks-container">
+    <div class="head">        
+        <div id="album">Albums</div>
+        <div id="listen">Listen</div>
+    </div>
+  <% allTracks.forEach((track, i) => { %>
+  <div class="single-track">
+    <h4><%- track.name%></h1>
+    <!-- <img src="<%#= track.images[0].url%>" alt="picture"> -->
+    <!-- <a href="<%#- artist.items[i].images[0].url%>">Pic</a> -->
+    <audio controls src="<%- track.preview_url%>"></audio>
+  </div>
+  <% }) %>
+</div>
